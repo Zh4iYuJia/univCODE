@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>人的有限性及其超越 — 思维导图</title>
+<style>
+  /* 基本页面样式 */
+  body { font-family: "Microsoft YaHei", Arial, sans-serif; background:#ffffff; margin:0; padding:18px; color:#222; }
+  h2 { margin:0 0 12px 0; font-weight:600; }
+  svg { width:100%; height:85vh; display:block; border-radius:6px; }
+
+  /* 节点、文字、连线样式 */
+  .node { fill:#f6f8ff; stroke:#4a6cff; stroke-width:1.6; rx:10; ry:10; }
+  .title { font-size:16px; fill:#0b3a93; font-weight:700; pointer-events:none; }
+  .label { font-size:13px; fill:#222; pointer-events:none; }
+  .label.small { font-size:12px; fill:#444; }
+  .edge { stroke:#9aa6c8; stroke-width:1.4; fill:none; }
+  .center-box { fill:#fff6ea; stroke:#ff9f2a; stroke-width:1.6; rx:12; ry:12; }
+  /* 便于编辑提示（不展示在图片中） */
+  .note { font-size:12px; color:#666; margin-top:8px; }
+</style>
+</head>
+<body>
+<h2>人的有限性及其超越 — 思维导图</h2>
+<!--
+  编辑提示：
+  - 每个节点为一个 <g class="node-group" transform="translate(x,y)"> 组合。
+  - 节点文本使用 <text> + 多个 <tspan> 来分行（便于编辑）。
+  - 想移动节点：修改相应 <g transform="translate(x,y)"> 的 x,y 值。
+  - 若要改文字：修改对应 <tspan> 的文本内容并根据行数调整 rect 的高度（或保持固定高度）。
+-->
+<svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="人的有限性及其超越 思维导图">
+
+  <!-- 中心 -->
+  <g transform="translate(600,120)">
+    <rect class="center-box" x="-170" y="-44" width="340" height="88"></rect>
+    <text class="title" x="0" y="-2" text-anchor="middle" font-size="20">人的有限性及其超越</text>
+    <text class="label small" x="0" y="20" text-anchor="middle">引导：认识有限 → 觉醒 → 实践</text>
+  </g>
+
+  <!-- 左上：引言 -->
+  <g transform="translate(280,300)">
+    <rect class="node" x="-130" y="-42" width="260" height="84"></rect>
+    <text class="title" x="0" y="-14" text-anchor="middle">引言</text>
+    <text class="label" x="0" y="6" text-anchor="middle">
+      <tspan x="0" dy="0">有限的日常显现</tspan>
+      <tspan x="0" dy="18" class="small">社媒“我不怕死” · 极限挑战 · 回避</tspan>
+    </text>
+  </g>
+
+  <!-- 右上：有限性二 -->
+  <g transform="translate(920,300)">
+    <rect class="node" x="-130" y="-42" width="260" height="84"></rect>
+    <text class="title" x="0" y="-14" text-anchor="middle">有限性二</text>
+    <text class="label" x="0" y="6" text-anchor="middle">
+      <tspan x="0" dy="0">逃避与代偿</tspan>
+      <tspan x="0" dy="18" class="small">彼岸/忘却 · 代偿行为（成瘾/极限/转移）</tspan>
+    </text>
+  </g>
+
+  <!-- 左中：有限性一 -->
+  <g transform="translate(360,440)">
+    <rect class="node" x="-140" y="-38" width="280" height="76"></rect>
+    <text class="title" x="0" y="-12" text-anchor="middle">有限性一</text>
+    <text class="label" x="0" y="8" text-anchor="middle">
+      <tspan x="0" dy="0">死亡是人的终极边界（必然）</tspan>
+      <tspan x="0" dy="18" class="small">时间有限 · 延续欲 · 区分热爱与恐惧</tspan>
+    </text>
+  </g>
+
+  <!-- 右中：超越二 -->
+  <g transform="translate(840,440)">
+    <rect class="node" x="-140" y="-38" width="280" height="76"></rect>
+    <text class="title" x="0" y="-12" text-anchor="middle">超越二</text>
+    <text class="label" x="0" y="8" text-anchor="middle">
+      <tspan x="0" dy="0">为己（自我修炼） + 为他（公共担当）</tspan>
+      <tspan x="0" dy="18" class="small">实践：戒恶习 · 志愿 · 教育 · 长期影响</tspan>
+    </text>
+  </g>
+
+  <!-- 左下：超越一 -->
+  <g transform="translate(360,600)">
+    <rect class="node" x="-140" y="-40" width="280" height="80"></rect>
+    <text class="title" x="0" y="-14" text-anchor="middle">超越一</text>
+    <text class="label" x="0" y="6" text-anchor="middle">
+      <tspan x="0" dy="0">觉醒：向死而生</tspan>
+      <tspan x="0" dy="18" class="small">方法：遗愿清单 · 优先级 · 定期反思</tspan>
+    </text>
+  </g>
+
+  <!-- 右下：结语 -->
+  <g transform="translate(840,600)">
+    <rect class="node" x="-140" y="-40" width="280" height="80"></rect>
+    <text class="title" x="0" y="-14" text-anchor="middle">结语与行动</text>
+    <text class="label" x="0" y="6" text-anchor="middle">
+      <tspan x="0" dy="0">三问：我怕什么？我为谁活？今天会让未来的我骄傲吗？</tspan>
+      <tspan x="0" dy="18" class="small">三件小事：戒1习惯 · 表达1感谢 · 写1封信</tspan>
+    </text>
+  </g>
+
+  <!-- 连接线：从中心分别指向 6 个节点 -->
+  <!-- left-top -->
+  <path class="edge" d="M600,120 C420,180 360,220 360,260" />
+  <!-- right-top -->
+  <path class="edge" d="M600,120 C780,180 840,220 840,260" />
+  <!-- left-mid -->
+  <path class="edge" d="M600,120 C480,240 420,320 420,380" />
+  <!-- right-mid -->
+  <path class="edge" d="M600,120 C720,240 780,320 780,380" />
+  <!-- left-bottom -->
+  <path class="edge" d="M600,120 C480,360 420,480 420,560" />
+  <!-- right-bottom -->
+  <path class="edge" d="M600,120 C720,360 780,480 780,560" />
+
+  <!-- 可选：在页面右下显示小注释（非必须，若需去掉可删除） -->
+  <g transform="translate(980,710)">
+    <text class="label small" x="0" y="0" text-anchor="end">编辑提示：调整 <tspan font-weight="700">transform</tspan> 与 <tspan font-weight="700">tspan</tspan> 文本</text>
+  </g>
+
+</svg>
+
+</body>
+</html>
