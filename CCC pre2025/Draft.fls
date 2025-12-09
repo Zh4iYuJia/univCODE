@@ -189,12 +189,12 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong7a.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5e.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei90.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei50.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong56.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong78.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong7f.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong9e.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong20.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong50.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong64.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong6f.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong81.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8d.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei91.tfm
@@ -212,7 +212,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong58.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong9c.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5d.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei53.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong56.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei7e.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8b.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei88.tfm
@@ -223,7 +222,6 @@ INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
-INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simsun.ttc
