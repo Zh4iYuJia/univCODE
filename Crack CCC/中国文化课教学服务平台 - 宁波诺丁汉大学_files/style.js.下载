@@ -1,0 +1,37 @@
+﻿//设计背景色
+var bodyBgColor = function (objColor) {
+    if (objColor == "" || objColor == null) {
+        objColor = "#fff";
+    }
+    $('html,body').css('background', objColor);
+}
+
+
+
+//根据日期获取星期几
+var getWeekName=function (objDay) {
+	var strDay = new Date(Date.parse(objDay));
+	var arrWeek = new Array('周日', '周一', '周二', '周三', '周四', '周五', '周六');
+	return arrWeek[strDay.getDay()];;
+}
+
+
+//获取当前日期
+var getNowDay=function(){
+	 var myDate = new Date()
+	 var year = myDate.getFullYear(); //获取当前年
+	 var mon = myDate.getMonth() + 1; //获取当前月
+	 var date = myDate.getDate(); //获取当前日
+	 return year+'-'+mon+'-'+date;
+}
+
+//获取月日
+var getMonthDate=function(objDay){
+	 var myDate = new Date(Date.parse(objDay));
+	 var mon = myDate.getMonth() + 1; //获取当前月
+	 var date = myDate.getDate(); //获取当前日
+	 return mon+'月'+date+'日';
+}
+
+
+    

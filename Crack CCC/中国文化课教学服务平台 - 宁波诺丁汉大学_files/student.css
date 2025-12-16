@@ -1,0 +1,930 @@
+﻿@import url(../../css/tool.css);
+@font-face{
+	font-family:OswaldLight;
+	src: url('../../font/Oswald-Light-TTF.ttf');
+}
+
+/*
+ * "px_to_rem": 55.2,
+ */
+
+
+html, body {/*font-family: "GenShinGothic";*/ position: relative; height: 100%; background: #fff; margin: 0; font-size: 0.289855rem; padding: 0;}
+
+header,div,span,a,input,button{font-size: 0.289855rem;}
+
+.border_radius_4{-webkit-border-radius:0.072464rem; -moz-border-radius:0.072464rem; -ms-border-radius:0.072464rem; -o-border-radius:0.072464rem; border-radius:0.072464rem; }
+.border_radius_3{-webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; border-radius:0.054348rem; }
+
+
+.mb_15{margin-bottom: 0.271739rem;}
+.mb_10{margin-bottom: 0.181159rem;}
+
+
+
+.bgBody_FFFEFF{background: #FFFEFF;}
+.bgBody_F6F6F6{background: #F6F6F6;}
+
+
+
+.bgColor_37A158{ }
+
+
+
+
+
+
+
+
+
+
+.headerIndexTop{width:auto; height: 1.086957rem; padding-top: 0.271739rem; padding-left: 0.543478rem; position: relative;}	
+.headerIndexTop .divHeaderSearchCont{background:#fff;  width: 75%; position: relative; overflow: hidden;}
+.headerIndexTop .divHeaderSearchCont .spIcon{position: absolute; top: 0.0rem; bottom: 0.0rem; left: 0.0rem; width: 0.724638rem; color: #c2c2c2;}
+.headerIndexTop .divHeaderSearchCont .txtSearch{ height: 0.543478rem; width: 100%; text-indent: 0.724638rem; font-size: 0.217391rem; 
+	color:#535353;}
+.headerIndexTop .abtnQRCode{  position: absolute; top: 0.0rem; right: 0.0rem; bottom: 0.0rem; padding-right: 0.543478rem; padding-top:0.271739rem; }
+.headerIndexTop .abtnQRCode img{ height: 0.507246rem; }
+
+.divFastModelBox{  padding-top: 0.362319rem; }
+.divFastModelBox .divFastListCont{width: 90%; margin:0.0rem auto; padding-top: 0.271739rem; padding-bottom: 0.362319rem;}
+.divFastModelBox .divFastListCont .divFastList{float: left; width: 24.9%;}
+.divFastModelBox .divFastListCont .divFastList .abtnFast{display:block;}
+.divFastModelBox .divFastListCont .divFastList .abtnFast span{display: block; text-align: center;}
+.divFastModelBox .divFastListCont .divFastList .abtnFast .spIcon{ margin-bottom: 0.09058rem; }
+.divFastModelBox .divFastListCont .divFastList .abtnFast .spIcon img{ height: 0.905797rem }
+.divFastModelBox .divFastListCont .divFastList .abtnFast .spFont{color: #fff; letter-spacing: 0.036232rem; font-size: 0.253623rem;}
+
+
+
+
+
+.secStudentIndexCont{background: #fff; width: auto; min-height: 7.246377rem; margin: 0.271739rem;
+-webkit-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; -moz-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; -ms-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; 
+-o-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; }
+
+.secStudentIndexCont .divTopFastCont{border-bottom: 0.018116rem solid #ECECEE;}
+.secStudentIndexCont .divTopFastCont .btnFastList{float: left; width: 33%; border-right: 0.018116rem solid #ECECEE; padding-top: 0.362319rem; padding-bottom: 0.362319rem;}
+.secStudentIndexCont .divTopFastCont .btnFastList span{}
+.secStudentIndexCont .divTopFastCont .btnFastList .spIcon{padding-bottom: 0.09058rem;}
+.secStudentIndexCont .divTopFastCont .btnFastList .spIcon img{ height: 0.634058rem; }
+.secStudentIndexCont .divTopFastCont .btnFastList .spFont{display:block; text-align: center; font-size: 0.289855rem; 
+	color: #0f0f0f; letter-spacing: 0.018116rem; }
+.secStudentIndexCont .divTopFastCont .btnFastList:last-child{border-right:none;}
+
+.secStudentIndexCont .divDataCont{ padding: 0.09058rem; }
+.secStudentIndexCont .divDataCont .divDataList{ border-bottom: 0.018116rem solid #ECECEE; padding-left: 0.724638rem; position: relative; padding-top: 0.271739rem; padding-bottom: 0.271739rem;}
+.secStudentIndexCont .divDataCont .divDataList .dviTitleCont{position: relative; color: #0f0f0f; padding-top: 0.181159rem; padding-bottom: 0.181159rem; font-size: 0.289855rem; }
+.secStudentIndexCont .divDataCont .divDataList .dviTitleCont .spIconCont{ background: #EFF6FE; position: absolute; top: 0.144928rem; left:-0.543478rem; width: 0.452899rem; height: 0.452899rem;
+	-moz-box-shadow:0.0rem 0.0rem 0.09058rem #EFF6FE; -webkit-box-shadow:0.0rem 0.0rem 0.09058rem #EFF6FE; box-shadow:0.0rem 0.0rem 0.09058rem #EFF6FE;
+	-webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; border-radius:50%; 
+}
+.secStudentIndexCont .divDataCont .divDataList .dviTitleCont .spIconCont .spIcon{border: 0.036232rem solid #3B9BFC; width: 0.235507rem; height: 0.235507rem; display:inline-block;  
+	margin:0.0rem auto; background: #fff;
+	-webkit-border-radius:0.09058rem; -moz-border-radius:0.09058rem; -ms-border-radius:0.09058rem; -o-border-radius:0.09058rem; border-radius:0.09058rem; 
+	-ms-transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}
+.secStudentIndexCont .divDataCont .divDataList .divInfoCont{ color: #8c9498;  padding-bottom: 0.181159rem; font-size: 0.253623rem;}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont{ position: absolute; top: 0.0rem; right: 0.0rem; padding-right: 0.271739rem; padding-top: 0.271739rem;}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont span{display:block; width: 0.905797rem; color: #005597;}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont .spDay{ font-size: 0.57971rem; font-weight: bold; text-align: center;}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont .spMonth{ text-align: center; font-size: 0.289855rem;}
+.secStudentIndexCont .divDataCont .divDataList:last-child{border-bottom: none;}
+
+.secStudentIndexCont .divDataCont .divDataList .divalinkCont{ top: 0.271739rem;  right: 0.09058rem;}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont a{display: block; color: #fff; display:block; height: 0.543478rem; width: 1.449275rem; text-align: center; line-height: 0.543478rem;
+	-webkit-border-radius:0.543478rem; -moz-border-radius:0.543478rem; -ms-border-radius:0.543478rem; -o-border-radius:0.543478rem; 
+	border-radius:0.543478rem; 	}
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont .abtnLeave{ background: #009CBD; margin-bottom: 0.271739rem;  }
+.secStudentIndexCont .divDataCont .divDataList .divRightTimeCont .abtnAdjust{ background: #F8A347; }
+	.secStudentIndexCont .divDataCont .divDataList .divBtnCont {
+		padding-right: 0.271739rem;
+	}
+	.secStudentIndexCont .divDataCont .divDataList .divBtnCont a {
+		float: right;
+		width: 30.2%;
+		height: 0.543478rem;
+		border: 0.018116rem solid #C0C0C0;
+		text-align: center;
+		line-height: 0.543478rem;
+		font-size: 0.253623rem;
+		margin-left: 0.271739rem;
+	}
+.secStudentIndexCont .divDataCont .divDataList .divBtnCont a:last-child{margin-left: 0.0rem;}
+.secStudentIndexCont .divDataCont .divDataList .divBtnCont .abtnDefault{ color: #040404; }
+.secStudentIndexCont .divDataCont .divDataList .divBtnCont .abtnAdjust{background: #009CBD; color:#fff; border-color:#009CBD; }
+
+
+
+
+
+.headerWhiteTop{ width: auto; position: relative; height: 0.905797rem; border-bottom: 0.018116rem solid #F7F7F7; color: #1a1a1a;}		
+.headerWhiteTop	.abtnBack{ position: absolute; top: 0.0rem; bottom: 0.0rem; left: 0.0rem; width: 0.905797rem; font-size: 0.326087rem;  }
+
+.divQuestList{ padding: 0.271739rem 0.543478rem; }
+.divQuestList .divTitle{ font-size: 0.253623rem; color: #3e3e3e; font-weight: bold;}
+.divQuestList .divAnswerCont{ padding-top: 0.181159rem; }
+.divQuestList .divAnswerCont .lblRadio{ padding:0.09058rem 0.271739rem; margin: 0.09058rem; display: block; color: #8c9498; padding-left: 0.452899rem;}
+.divQuestList .divAnswerCont .lblRadio .fa-check-circle{display: none;}
+.divQuestList .divAnswerCont .lblRadio input[type="radio"]{display:none ;}
+.divQuestList .divAnswerCont .lblCheked{ color: #111111; font-weight: bold;}
+.divQuestList .divAnswerCont .lblCheked .fa-check-circle{display: inline-block;}
+.divQuestList .divAnswerCont .lblCheked .fa-circle{display: none;}
+.divQuestList .divTestArea{ padding-top: 0.271739rem; }
+.divQuestList .divTestArea .txtProposal{width: 100%; border:0.018116rem solid #DFDFDF; padding: 0.181159rem;}
+
+.divQuestList .abtnSubimt{background: #009bbd; border: 0.018116rem solid #005597; color: #fff; display:block; 
+	padding-top: 0.181159rem; padding-bottom: 0.181159rem; text-align: center; 
+	-webkit-border-radius:0.905797rem; -moz-border-radius:0.905797rem; -ms-border-radius:0.905797rem; 
+	-o-border-radius:0.905797rem; 
+	border-radius:0.905797rem; -webkit-appearance: none;}
+.divArticleTitleCont{ padding: 0.271739rem; }
+.divArticleTitleCont .divTitleCont{font-weight: bold; color: #1A1A1A; text-align: center; font-size: 0.326087rem;}
+.divArticleTitleCont .divTearcherCont{text-align: center; font-size: 0.253623rem; padding-top: 0.181159rem; 
+	color:#767676;}
+.divArticleTitleCont .divTearcherCont em{font-style: normal; color:#1A1A1A;}
+.divQuestFontCont{ padding: 0.271739rem 0.543478rem; font-size: 0.217391rem;}
+
+.divQuestList .divBtnList{ float: left; width: 49.9%; padding-left: 0.181159rem; padding-right: 0.181159rem; }
+.divQuestList .divBtnList .abtn{ border: 0.018116rem solid #000; display: block; margin: 0.09058rem auto; 
+	text-align: center;
+	height: 0.724638rem; line-height: 0.724638rem; border-radius: 0.072464rem; font-size: 0.253623rem;}
+.divQuestList .divBtnList .abtnDefault{background-color: #F4F4F4; border:0.018116rem solid #DDDDDD; color:#444444;}
+.divQuestList .divBtnList .abtnSumbit{background-color:#3C8DBC; border: 0.018116rem solid #367FA9; color:#ffffff;}
+
+
+
+
+
+.headerCont{width:auto; height: 0.905797rem; position: relative; background: #009CBD; color: #fff;}	
+.headerCont .abtnBack{position: absolute; top: 0.0rem; left: 0.0rem; bottom: 0.0rem; width: 0.905797rem; color: #fff;}
+.headerCont .abtnRight{position: absolute; top: 0.0rem; right: 0.0rem; bottom: 0.0rem; width: 0.905797rem; color: #fff;}
+
+	
+.secCourseContBox{width: 100%; }			
+.secCourseContBox .divCourseCont{ background: #fff; margin: 0.271739rem; padding: 0.271739rem; position: relative; display: block;}
+.secCourseContBox .divCourseCont .divTitleCont{ padding-bottom: 0.09058rem; font-size: 0.253623rem; display:block;}
+.secCourseContBox .divCourseCont .divLabelCont{display:block;}
+.secCourseContBox .divCourseCont .divLabelCont span{font-size: 0.217391rem; background: #ddd; color: #000; padding:0.036232rem 0.09058rem;
+	-webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; border-radius:0.054348rem; }
+.secCourseContBox .divCourseCont .divLabelCont .spName{ background: #E5F0FE; color: #007CA8;}
+.secCourseContBox .divCourseCont .divLabelCont .spDiscuss{ background: #FEE9E5; color: #E22C44; }
+.secCourseContBox .divCourseCont .divLabelCont .spLecture{ background: #FEF8E5; color: #F7941D; }
+.secCourseContBox .divCourseCont .divIconCont{position: absolute; top: 0.0rem; bottom: 0.0rem; right: 0.0rem; width: 1.268116rem; color: #CDCDCD;}	
+
+
+
+.secSelTimeCont{ padding: 0.271739rem; border-bottom: 0.09058rem solid #F5F5F5;}
+.secSelTimeCont .divTitleCont{ font-size: 0.326087rem;
+    color: #202020;
+    padding-bottom: 0.271739rem;}
+.secSelTimeCont .divTimeListCont{width: auto;   background: #f6f6f6; border:0.036232rem solid #EAEAEC;  position: relative; overflow: hidden; padding:0.271739rem; margin-bottom: 0.271739rem;}
+.secSelTimeCont .divTimeListCont .divIconCont{position: absolute; top: 0.344203rem; left: 0.0rem; width: 0.996377rem; text-align: center; font-size: 0.362319rem; color:#26AAC6;}
+.secSelTimeCont .divTimeListCont .divTime{ padding-left: 0.724638rem; font-family: OswaldLight; font-size: 0.434783rem; letter-spacing: 0.036232rem; color:#2A2A2A;}
+.secSelTimeCont .divTimeListCont .divOther{ padding-left: 0.724638rem; color:#A3A9AC; font-size: 0.253623rem; }
+.secSelTimeCont .divTimeListCont .divOther span:first-child{margin-right: 0.271739rem;}
+.secSelTimeCont .divRightDownIcon{display:none;}
+.secSelTimeCont .divTimeAction{background-color:#EFFCFF; border-color:#59AFD8;}
+.secSelTimeCont .divTimeAction .divRightDownIcon{display:block; position: absolute; bottom: 0.0rem; right: 0.0rem;
+	width: 0; height: 0; border-style: solid; border-width: 0 0 0.543478rem 0.543478rem;
+	border-color: transparent transparent #59AFD8 transparent;	}
+.secSelTimeCont .divTimeAction .divRightDownIcon .spIcon{color:#Fff; position: absolute; bottom: -0.507246rem; right: 0.054348rem; font-size: 0.217391rem; }
+
+
+
+
+.secSelOpinionCont{ padding: 0.271739rem;}
+.secSelOpinionCont .divTitleCont{ font-size: 0.326087rem; color: #202020; padding-bottom: 0.271739rem;}
+.secSelOpinionCont .divSelOpinionCont{width: auto; background: #f6f6f6; border:0.036232rem solid #EAEAEC;  position: relative; overflow: hidden; padding:0.271739rem; margin-bottom: 0.271739rem;}
+.secSelOpinionCont .divSelOpinionCont .divOpinionTitle{ font-size: 0.289855rem; font-weight: bold; color:#17A3C1; }
+.secSelOpinionCont .divSelOpinionCont .divOpinionTitle span{font-size: 0.253623rem; padding:0.036232rem 0.09058rem; font-weight: normal;}
+.secSelOpinionCont .divSelOpinionCont .divOpinionTitle .spFull{background:#FEE9E5; color:#E75767;  }
+.secSelOpinionCont .divSelOpinionCont .divOpinionTitle .spNum{background: #FEF8E5; color:#F8A442;}
+.secSelOpinionCont .divSelOpinionCont .divOpinionTitle .spNum b{font-weight: bolder; margin-left: 0.036232rem; margin-right: 0.036232rem;}
+.secSelOpinionCont .divSelOpinionCont .divOpinionInfo{color:#1C1D1D; padding-top: 0.036232rem;}
+.secSelOpinionCont .divSelOpinionCont .divRightDownIcon{display:none; }
+.secSelOpinionCont .divOpinionAct{background-color:#EFFCFF; border-color:#59AFD8;}
+.secSelOpinionCont .divOpinionAct .divRightDownIcon{display:block; position: absolute; bottom: 0.0rem; right: 0.0rem;
+	width: 0; height: 0; border-style: solid; border-width: 0 0 0.543478rem 0.543478rem;
+	border-color: transparent transparent #59AFD8 transparent;}
+.secSelOpinionCont .divOpinionAct .divRightDownIcon .spIcon{color:#Fff; position: absolute; bottom: -0.507246rem; right: 0.054348rem; font-size: 0.217391rem; }
+
+.secFooterBtnCont{ width: auto; padding:0.271739rem; }
+.secFooterBtnCont .btnSumbit{ width: 100%; height: 0.724638rem; background:#009CBD; border:0.018116rem solid #009CBD;  
+	-webkit-border-radius:0.724638rem; -moz-border-radius:0.724638rem; -ms-border-radius:0.724638rem; -o-border-radius:0.724638rem; border-radius:0.724638rem; color:#fff;}
+
+
+
+
+.secDateTimeCont{ width: 100%; overflow-x:scroll; overflow-y: hidden;   border-bottom: 0.018116rem solid #EFEFEF;}
+.divHiddenCont{width: 1.811594rem;}
+::-webkit-scrollbar {width: 0; height: 0; background-color: transparent;}
+.secDateTimeCont .divDayList{float: left; padding: 0.181159rem; text-align: center; position: relative; width: 1.358696rem;}
+.secDateTimeCont .divDayList .divWeekName{ font-size: 0.326087rem; font-weight: bold; color: #939393; }
+.secDateTimeCont .divDayList .divDateName{ font-size: 0.253623rem; color:#9B9B9B;}
+.secDateTimeCont .divDayList .divLineCont{display: none;}
+.secDateTimeCont .divAction .divWeekName,
+.secDateTimeCont .divAction .divDateName{ color:#020202;}
+.secDateTimeCont .divAction .divLineCont{display:block; position:absolute; bottom: -0.09058rem; left: 0.0rem; right: 0.0rem;}
+.secDateTimeCont .divAction .divLineCont .spLine{display:inline-block; width: 0.543478rem; height: 0.09058rem; background: #009CBD;
+		-webkit-border-radius:0.09058rem; -moz-border-radius:0.09058rem; -ms-border-radius:0.09058rem; -o-border-radius:0.09058rem; border-radius:0.09058rem; }
+
+
+.secConfirmCont{padding: 0.543478rem;}
+.secConfirmCont .divIconCont{ text-align: center; padding-top: 0.543478rem; }
+.secConfirmCont .divIconCont img{height: 1.449275rem;}
+.secConfirmCont .divFontCont{ padding-top: 0.543478rem; padding-bottom: 0.543478rem; color: #454545; text-align: center; }
+.secConfirmCont .divBtnCont{ padding-top: 0.271739rem; padding-left: 1.086957rem; padding-right: 1.086957rem; }
+.secConfirmCont .divBtnCont .btnSumbit{ width: 100%; height: 0.724638rem; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; 
+	-ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-border-radius:0.724638rem; -moz-border-radius:0.724638rem;
+	-ms-border-radius:0.724638rem; -o-border-radius:0.724638rem; border-radius:0.724638rem; border:0.018116rem solid #009CBD; background: #009CBD; color:#fff;}
+
+
+
+.secDateContBox{ background:#fff;   }
+.secDateContBox .divTitleContBox{padding:0.271739rem; padding-bottom:0;}
+.secDateContBox .divTitleContBox .spTime{ color:#404451; font-size: 0.353623rem; }
+	.secDateContBox .divTitleContBox .abtnToday {
+		color: #4a4c59;
+		float: right;
+		font-size: 0.353623rem;
+		margin-right: 0.271739rem;
+	}
+	.secDateContBox .divTitleContBox .abtnViewWeek {
+		color: #3e404f;
+		float: right;
+		position: relative;
+		padding-right: 0.362319rem;
+		font-size: 0.353623rem;
+	}
+.secDateContBox .divTitleContBox .abtnViewWeek .spImg{position: absolute; top: -0.036232rem; right: 0.0rem; }
+.secDateContBox .divTitleContBox .abtnViewWeek .spImg img{height: 0.271739rem;}
+
+
+
+.jcalendar_week{ padding-bottom: 0.271739rem; border-bottom:0.09058rem solid #F5F5F5;}	
+.jcalendar_week .calendar_tr{} 
+.jcalendar_week .calendar_tr li{padding: 0; font-size: 0.253623rem; float: left; width: 14%; text-align: center; position: relative;}
+.jcalendar_week .calendar_tr:after{content:"";display: block;clear: both;padding: 0 1%;} 
+
+.jcalendar_week .calendar_week{ padding-bottom: 0.271739rem;	}
+.jcalendar_week .calendar_week li{ color:#c4c6ca;  }
+.jcalendar_week .calendar_week .liWeekToday{ color: #373847; font-weight: bold;}
+
+.jcalendar_week .calendar_day_bar li{display: -webkit-flex; display: flex;  -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; 
+	justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;  }
+.jcalendar_week .calendar_day_bar .calendar_day_i{ width: 0.724638rem; height: 0.724638rem; color: #454755;
+	font-weight: bold; -webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; 
+	border-radius:0.054348rem; 
+	display: -webkit-flex; display: flex;  -webkit-box-pack: center; -ms-flex-pack: center; 
+	-webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; 
+	-webkit-align-items: center; align-items: center;}
+.jcalendar_week .calendar_day_bar .calendar_day .spIcon{position: absolute; bottom: 0.036232rem; left:0.0rem; right: 0.0rem; font-size: 0.108696rem; color: #5D5F6B;}	
+.jcalendar_week .calendar_day_bar .calendar_day .spOldDate{color:#CBCBCB;}
+.jcalendar_week .calendar_day_bar .liTodayCont .calendar_day_i{ background:#4a4949 !important; color: #fff; 
+	border:0.018116rem solid #3F414F;}
+.jcalendar_week .calendar_day_bar .liTodayCont .spIcon{color: #fff;}
+
+.jcalendar_week .calendar_day_bar .calendar_day_act .calendar_day_i{ background:#92918e; color: #fff;  }
+.jcalendar_week .calendar_day_bar .calendar_day_act .spIcon{color: #fff;}
+
+.secDateInfoCont .divNullData{ padding-top: 0.905797rem; padding-bottom: 0.905797rem; }
+.secDateInfoCont .divNullData .spImg{display: block; text-align: center;}
+.secDateInfoCont .divNullData .spImg img{width: 70%;}
+.secDateInfoCont .divNullData .spFont{display:block; color: #CCCCCC; padding-top: 0.271739rem; font-size: 0.326087rem; text-align: center;}
+
+
+.secAdjustCont{padding: 0.271739rem;}	
+.secAdjustCont .divTitleCont{font-size: 0.326087rem; color: #202020; padding-bottom: 0.271739rem;}	
+.secAdjustCont .divCourseList{background:#F6F6F6; border:0.036232rem solid #E2E2E6; position: relative;
+	margin-bottom: 0.271739rem; overflow: hidden;
+	-webkit-border-radius:0.072464rem; -moz-border-radius:0.072464rem; -ms-border-radius:0.072464rem; -o-border-radius:0.072464rem; 
+	border-radius:0.072464rem; padding:0.271739rem 0.271739rem 0.271739rem 0.815217rem;}
+.secAdjustCont .divCourseList .spIcon{position: absolute; top: 0.271739rem; left: 0.271739rem; color:#017CA8;}	
+.secAdjustCont .divCourseList .divTitle{color:#121212; font-weight: bold; padding-bottom: 0.271739rem;}
+.secAdjustCont .divCourseList .divTitle .spLebel{background: #FEE9E5; color: #E3374C; font-size: 0.253623rem; padding: 0.036232rem 0.108696rem; font-weight: normal; 
+	-webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; 
+	border-radius:0.054348rem; }	
+.secAdjustCont .divCourseList .divFont{color:#8F979B; font-size: 0.253623rem; padding-top: 0.036232rem; padding-bottom: 0.036232rem;}
+.secAdjustCont .divCourseList .divRightTimeCont{ position: absolute; top: 0.0rem; right: 0.0rem; padding-right: 0.271739rem; padding-top: 0.271739rem;}
+.secAdjustCont .divCourseList .divRightTimeCont span{display:block; width: 0.905797rem; color: #005597;}
+.secAdjustCont .divCourseList .divRightTimeCont .spDay{ font-size: 0.57971rem; font-weight: bold; text-align: center;}
+.secAdjustCont .divCourseList .divRightTimeCont .spMonth{ text-align: center; font-size: 0.289855rem;}
+.secAdjustCont .divCourseList .divRightDownIcon{display:none;}
+.secAdjustCont .divCourseAct{ background: #EFFCFF; border-color: #59AFD8; }
+.secAdjustCont .divCourseAct .divRightDownIcon{display:block; position: absolute; bottom: 0.0rem; right: 0.0rem;
+	width: 0; height: 0; border-style: solid; border-width: 0 0 0.543478rem 0.543478rem;
+	border-color: transparent transparent #59AFD8 transparent;	}
+.secAdjustCont .divCourseAct .divRightDownIcon .spCheck{color:#fff; position: absolute; bottom: -0.507246rem; right: 0.054348rem; font-size: 0.217391rem; }
+
+
+
+
+.secMyGradesCont{background: #fff; padding: 0.886957rem 0.543478rem 0.543478rem 0.243478rem; margin: 0.815217rem 0.271739rem 0.271739rem 0.271739rem; position: relative;
+	-webkit-border-radius:0.181159rem; -moz-border-radius:0.181159rem; -ms-border-radius:0.181159rem; 
+	-o-border-radius:0.181159rem; border-radius:0.181159rem; }	
+.secMyGradesCont .divIconCont{position: absolute; left: 0.0rem; right: 0.0rem; top: -0.688406rem; text-align: center;}	
+.secMyGradesCont .divIconCont img{width: 3.07971rem;}
+.secMyGradesCont .divMyInfoCont{position: relative; padding-left: 1.449275rem; padding-top: 0.181159rem;padding-bottom: 0.181159rem;}
+.secMyGradesCont .divMyInfoCont .divAvaImg{position: absolute; top: 0.09058rem; left: 0.271739rem; bottom: 0.0rem;}
+.secMyGradesCont .divMyInfoCont .divAvaImg img{ width: 0.905797rem; }
+.secMyGradesCont .divMyInfoCont .divName{font-size: 0.289855rem; color: #5E616D; font-weight: bold;}
+.secMyGradesCont .divMyInfoCont .divName span{ font-weight: normal; font-size: 0.217391rem; margin-left: 0.09058rem; }
+.secMyGradesCont .divMyInfoCont .divNumber{color:#B5B5BD; font-size: 0.253623rem;}
+.secMyGradesCont .divScoreTotalCont{ background: #FAFBFC; margin-top: 0.271739rem; -webkit-border-radius:0.181159rem; -moz-border-radius:0.181159rem; -ms-border-radius:0.181159rem; 
+	-o-border-radius:0.181159rem; border-radius:0.181159rem; margin-bottom: 0.543478rem;}
+.secMyGradesCont .divScoreTotalCont .divScoreList{float: left; width: 33.3%; padding-top: 0.271739rem; padding-bottom: 0.271739rem;}
+.secMyGradesCont .divScoreTotalCont .divScoreList .spNum{display: block; text-align: center; color:#009CBD; font-family: OswaldLight; font-weight: bold; font-size: 0.57971rem;}
+.secMyGradesCont .divScoreTotalCont .divScoreList .spFont{display: block; text-align: center; color:#8F949E;}
+.secMyGradesCont .divCourseRecordList{border-bottom: 0.018116rem solid #F3F3F3; position: relative; padding:0.271739rem 0.271739rem 0.271739rem 0.905797rem;}
+.secMyGradesCont .divCourseRecordList .divIcon{position: absolute; left: 0.0rem; top: 0.271739rem; color:#009CBD; 
+	font-size: 0.253623rem; width: 0.905797rem; text-align: center;}
+.secMyGradesCont .divCourseRecordList .divTitle{
+	font-weight: bold; color:#161616; padding-bottom: 0.181159rem; padding-right: 0.724638rem;}	
+.secMyGradesCont .divCourseRecordList .divFont{ color:#91999D; font-size: 0.253623rem; padding-top: 0.036232rem; padding-bottom: 0.036232rem; }
+.secMyGradesCont .divCourseRecordList .divFont span:first-child {margin-right: 0.271739rem;}
+.secMyGradesCont .divCourseRecordList:last-child{border:none;}
+.secMyGradesCont .divCourseRecordList .divTotalScoreCont{font-family:OswaldLight; color:#009CBD; position: absolute; top: 0.271739rem; right: 0.271739rem; font-weight: bold; 
+	font-size: 0.507246rem;  }
+.secMyGradesCont .divTitle .divLabelCont{padding-bottom: 0.181159rem;}
+.secMyGradesCont .divTitle .divLabelCont .spLabel{background: #FEE9E5; color:#E54459; font-size: 0.253623rem; 
+	padding:0.072464rem 0.144928rem;}
+
+.secMyGradesCont .divCourseRecordList .divUnannounced{ color:#909399; position: 
+	absolute; top: 0.271739rem; right: 0; 
+	font-size: 0.289855rem;  }
+.secMyGradesCont .divCourseRecordList .divDidNotPass{ color:#F56C6C; position: 
+	absolute; top: 0.271739rem; right: 0; 
+	font-size: 0.289855rem;  }
+.secMyGradesCont .divCourseRecordList .divPass{ color:#67C23A; position: 
+	absolute; top: 0.271739rem; right: 0; 
+	font-size: 0.289855rem;  }	
+
+.secSelOpinionCont .txtLeaveCont {
+	width: 100%;
+	border: 0.02rem solid #bebebe;
+	padding: 0.271739rem;
+	-webkit-border-radius: 0.054348rem;
+	-moz-border-radius: 0.054348rem;
+	-ms-border-radius: 0.054348rem;
+	-o-border-radius: 0.054348rem;
+	opacity: border-radius:0.054348rem;
+	color: #767676;
+}	
+
+
+.divInputInfoCont{ padding: 0.271739rem 0.543478rem; }
+.divInputInfoCont .divTestArea{ padding-top: 0.271739rem; }
+.divInputInfoCont .divTestArea label{display:block; font-size: 0.289855rem; color: #1a1a1a; font-weight: bold; margin-bottom: 0.09058rem;}
+.divInputInfoCont .divTestArea .txtInput{height: 0.634058rem; width:100%; padding:0.0rem 0.09058rem; border:0.018116rem solid #ddd;}
+
+.divInputInfoCont .abtnSubimt{background: #009bbd; border: 0.018116rem solid #005597; color: #fff; display:block; padding-top: 0.181159rem; 
+	padding-bottom: 0.181159rem; text-align: center; 
+	-webkit-border-radius:0.905797rem; -moz-border-radius:0.905797rem; -ms-border-radius:0.905797rem; -o-border-radius:0.905797rem; 
+	border-radius:0.905797remiyne; -webkit-appearance: none;}
+
+	.divInputInfoCont .abtnSave {
+		background: #009bbd;
+		border: 0px;
+		color: #fff;
+		display: block;
+		padding-top: 0.181159rem;
+		padding-bottom: 0.181159rem;
+		text-align: center;
+		-webkit-appearance: none;
+		width:49%;
+		float:right;
+	}
+
+	.divInputInfoCont .abtnReset {
+		background: #efefef;
+		border: 0px;
+		color: #666;
+		display: block;
+		padding-top: 0.181159rem;
+		padding-bottom: 0.181159rem;
+		text-align: center;
+		
+		-webkit-appearance: none;
+		width: 49%;
+		float: left;
+	}
+
+
+.selectLine{display: flex;align-items: center;}
+.selectLine span{ width: 33.3%; height: 0.724638rem; display: flex;  align-items: center; justify-content: flex-end;
+	padding-bottom: 0.054348rem;}	
+
+	
+
+
+
+.secSelTimeContOnly{ padding: 0.271739rem;  border-bottom: 0.09058rem solid #F5F5F5;}
+.secSelTimeContOnly .divTitleListCont,
+.secSelTimeContOnly .divTimeListCont{width: auto; position: relative; overflow: hidden; padding:0.271739rem; }
+.secSelTimeContOnly .divTitleListCont .divIconCont,
+.secSelTimeContOnly .divTimeListCont .divIconCont{position: absolute; top: 0.344203rem; left: 0.0rem; width: 0.996377rem; text-align: center; font-size: 0.362319rem; color:#26AAC6;}
+.secSelTimeContOnly .divTimeListCont .divTime{ padding-left: 0.724638rem; font-family: OswaldLight; font-size: 0.434783rem; letter-spacing: 0.036232rem; color:#2A2A2A;}
+.secSelTimeContOnly .divTitleListCont .divTitle{padding-left: 0.724638rem; font-size: 0.326087rem; font-weight: bold; letter-spacing: 0.036232rem; color:#2A2A2A;}
+
+.secSelTimeContOnly .divTitleListCont .divOther,
+.secSelTimeContOnly .divTimeListCont .divOther{ padding-left: 0.724638rem; color:#A3A9AC; font-size: 0.253623rem; }
+.secSelTimeContOnly .divTitleListCont .divOther{padding-top: 0.09058rem;}
+.secSelTimeContOnly .divTitleListCont .divOther span:first-child,
+.secSelTimeContOnly .divTimeListCont .divOther span:first-child{margin-right: 0.271739rem;}
+
+
+
+.secMyInfoCont{}
+.secMyInfoCont .divInfoList{background:#fff; position: relative;height: 0.724638rem; 
+	width: 100%; border-bottom: 0.018116rem solid #efefef;}
+	
+.secMyInfoCont .spTitle{position: absolute; top: 0.0rem; left: 0.271739rem; bottom: 0.0rem; color: #121212;}
+.secMyInfoCont .spValue{position: absolute; top: 0.0rem; right: 0.271739rem; bottom: 0.0rem; color:#8F979B; 
+	font-size: 0.253623rem;}
+.secMyInfoCont .spValue .spIcon{margin-left: 0.271739rem;}
+ .secMyInfoCont .abtnOut{background: #fff; width: 100%; height:0.724638rem; color:#121212; color: #ff0000;}
+ .secMyInfoCont .abtnEditPwd{background: #fff; width: 100%; height:0.724638rem; color:#121212;}
+.secMyInfoCont .divInfoList:last-child{ border-bottom: 0.0rem; }
+
+
+
+
+.layerModelUpCont{position:fixed; bottom:0; left:0; top: 0; right: 0; z-index: 99999;}
+.layerModelUpCont .bgBack{position: absolute; top: 0; bottom: 0; left:0; right: 0; background: #000; opacity: 0.5;}
+.layerModelUpCont .layerModelClose{padding: 0!important; margin: 0 !important; overflow: hidden;} 
+.layerModelUpCont .layerModelUp{position:fixed; bottom:0; left:0; right: 0; height: 0; padding: 0.543478rem; border:none; background: #fff;}
+.layerModelUpCont .layerModelUp .divModelContList{ margin-bottom: 0.543478rem; }
+.layerModelUpCont .layerModelUp .divModelContList:last-child{margin-bottom: 0.0rem;}
+.layerModelUpCont .layerModelUp .divLayerTitle{ font-weight: bold; color: #515360; font-size: 0.326087rem; 
+	margin-bottom: 0.09058rem; }
+
+.layerModelUpCont .layerModelUp .divLabelCont{font-size: 0.253623rem; padding-bottom: 0.09058rem; padding-top: 0.271739rem; position: relative; width: 100%;}
+.layerModelUpCont .layerModelUp .divLabelCont .spLevel{position: absolute; top:0.271739rem; right: 0; text-align: right; font-size: 0.253623rem;}
+.layerModelUpCont .layerModelUp .divLabelCont .spLevel em{font-style: normal; font-weight: bold;}
+.layerModelUpCont .layerModelUp .divLabelCont .spLevel .emH{ color: #23933D; }
+.layerModelUpCont .layerModelUp .divLabelCont .spLevel .emM{ color: #FFC107; }
+.layerModelUpCont .layerModelUp .divLabelCont .spLevel .emL{color: #C6303E;}
+
+.layerModelUpCont .layerModelUp .divDateCont .txtValue{width: 100%; height: 0.724638rem; border:none; text-align: left; font-size: 0.253623rem; border: 0.018116rem solid #ddd; padding-left: 0.271739rem; padding-right: 0.271739rem; }
+.layerModelUpCont .layerModelUp .divModelContList .btnSubmit{width: 100%; height: 0.724638rem; background: #009bbd; color: #fff; border:0.018116rem solid #005597;}
+
+
+
+
+.secAllContName{ padding: 0.271739rem;  border-bottom: 0.09058rem solid #F5F5F5;}
+.secAllContName .divTitleListCont{width: auto; position: relative; overflow: hidden; }
+.secAllContName .divTitleListCont .divIconCont{position: absolute; top: 0; left: 0.0rem; width: 0.543478rem; text-align: center; font-size: 0.362319rem; color:#26AAC6;}
+.secAllContName .divTitleListCont .divTitle{padding-left: 0.724638rem; font-size: 0.326087rem; font-weight: bold; letter-spacing: 0.036232rem; color:#2A2A2A; padding-right: 0.543478rem;}
+
+.secAllContName .divTitleListCont .divOther{ padding-left: 0.724638rem; color:#A3A9AC; font-size: 0.253623rem; }
+.secAllContName .divTitleListCont .divUnpublished,
+.secAllContName .divTitleListCont .divPassed,
+.secAllContName .divTitleListCont .divDidNotPass{position: absolute; top: 0; right: 0; font-size: 0.217391rem;
+ background:#dc3545; color:#fff; padding:0.036232rem 0.054348rem; -webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; 
+	 	border-radius:0.054348rem;}
+.secAllContName .divTitleListCont .divPassed{background:#28a745;}
+.secAllContName .divTitleListCont .divUnpublished{ background:#6c757d; color:#DAE3D4;  }
+.secAllContName .divTitleListCont .divGrades{
+	position: absolute; top: 0; right: 0; font-family: OswaldLight; color:#005597; font-size: 0.362319rem; }
+
+.tabContBox{}
+.tabContBox .tabIndexTitleCont{ }
+.tabContBox .tabIndexTitleCont .spTab{float: left; width: 19.9%; font-size: 0.253623rem;
+	display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; 
+	-ms-flex-align: center; -webkit-align-items: center; align-items: center; 
+	height: 0.724638rem; color:#767676; background: #F5F5F5;}
+.tabContBox .tabIndexTitleCont .spTab .spNum{background: #A0A6AB; color:#F2F3F4; font-size: 0.217391rem;
+ 	padding-left: 0.09058rem; padding-right: 0.09058rem; padding-top: 0.036232rem; padding-bottom: 0.036232rem; margin-left: 0.09058rem;
+ 	-webkit-border-radius:0.054348rem; -moz-border-radius:0.054348rem; -ms-border-radius:0.054348rem; -o-border-radius:0.054348rem; 
+ 	border-radius:0.054348rem; }
+.tabContBox .tabIndexTitleCont .spAct{ color:#000; font-weight: bold; background: #fff;}
+.tabContBox .tabIndexTitleCont .spAct .spNum{ background: #005597 !important; color:#fff; }
+
+
+
+.tabContBox{}
+.tabContBox .tabIndexImgCont{ }
+.tabContBox .tabIndexImgCont .spTab{float: left; width: 49.9%; font-size: 0.253623rem;
+			display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; 
+			-ms-flex-align: center; -webkit-align-items: center; align-items: center; 
+			height: 1.086957rem; color:#767676; background: #F5F5F5;}
+		.tabContBox .tabIndexImgCont .spTab .spColor{display:none;}
+		.tabContBox .tabIndexImgCont .spTab .spFont{margin-left:0.09058rem;}
+		.tabContBox .tabIndexImgCont .spTab .spIcon img{ height:0.452899rem;}
+		.tabContBox .tabIndexImgCont .spAct{ color:#000; font-weight: bold; background: #fff;}
+		.tabContBox .tabIndexImgCont .spAct .spColor{display:inline-block ;}
+		.tabContBox .tabIndexImgCont .spAct .spGray{display:none ;}
+
+
+
+
+.secTabAttendanceCont{background: #fff; margin:0.271739rem; }
+.secTabAttendanceCont .divTabTitleCont{ padding-top: 0.271739rem; padding-bottom: 0.271739rem; border-bottom: 0.018116rem solid #F9F9F9; }
+.secTabAttendanceCont .divTabTitleCont .spTabTitle{float: left; width: 33.3%; text-align: center; font-size: 0.289855rem; color: #9E9E9E; position: relative;}
+.secTabAttendanceCont .divTabTitleCont 
+.secTabAttendanceCont .divTabTitleCont .spTabTitle .spLine{display:none;}
+.secTabAttendanceCont .divTabTitleCont .spAction{color: #1C1C1C;}
+.secTabAttendanceCont .divTabTitleCont .spAction .spLine{display:block; position: absolute; bottom: -0.217391rem; left: 0.0rem; right: 0.0rem; text-align: center;}
+.secTabAttendanceCont .divTabTitleCont .spAction .spLine em{display: block; height: 0.054348rem; width: 0.543478rem; background: #1E2135; margin: 0.0rem auto;}
+.secTabAttendanceCont .divTabContBox{min-height: 5.434783rem;}
+.secTabAttendanceCont .divTabContBox .divStudentList{border-bottom: 0.018116rem solid #FAFAFA; position: relative; padding:0.271739rem;}
+.secTabAttendanceCont .divTabContBox .divStudentList:last-child{border-bottom:none;}
+
+
+.secTabAttendanceCont .divTabContBox .divStudentList .spIcon{font-size: 0.326087rem; color: #505361; position: absolute; right: 0.543478rem; top: 0rem; bottom: 0.0rem;display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; 
+	-ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.secTabAttendanceCont .divTabContBox .divStudentList .spIcon img{ height: 0.452899rem; }
+.secTabAttendanceCont .divTabContBox .divStudentList .divNameCont{ padding-left:0.271739rem; position: relative; padding-bottom: 0.09058rem;}
+
+.secTabAttendanceCont .divTabContBox .divStudentList .divNameCont em{font-style: normal; font-size: 0.217391rem; margin-left: 0.181159rem; color: #464858;}
+.secTabAttendanceCont .divTabContBox .divStudentList .divNumber{ color: #ADAEB7; padding-left:0.271739rem;}
+
+  .secTabAttendanceCont .divTabContBox .divStudentList .divScoreCont{ 
+  	position: absolute; top: 0; bottom: 0; right: 1.358696rem; }
+  .secTabAttendanceCont .divTabContBox .divStudentList .divScoreCont span{
+  	border: 0.018116rem solid #ddd; height: 0.724638rem; width: 1.811594rem; -webkit-border-radius:0.724638rem; 
+  	-moz-border-radius:0.724638rem; -ms-border-radius:0.724638rem; 
+  	-o-border-radius:0.724638rem; border-radius:0.724638rem; background:#F8F9FA; color: #444444; }
+  .secTabAttendanceCont .divTabContBox .divStudentList .divScoreCont span i{ font-size: 0.326087rem; color:#ddd;}
+  .secTabAttendanceCont .divTabContBox .divStudentList .divScoreCont span em{color:#DC3545; font-style: normal;}
+
+
+
+
+
+
+
+ .secStudentLessonInfo{background: #fff; width: auto; min-height: 7.246377rem; margin: 0rem;
+-webkit-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; -moz-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; -ms-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; 
+-o-border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; border-radius:0.181159rem 0.181159rem 0.0rem 0.0rem; }
+
+
+	.secStudentLessonInfo .divStudentCont {
+		padding: 0.09058rem;
+	}
+		.secStudentLessonInfo .divStudentCont .divDataList {
+			border-bottom: 0.018116rem solid #ECECEE;
+			padding-left: 0.724638rem;
+			position: relative;
+			padding-top: 0.271739rem;
+			padding-bottom: 0.271739rem;
+		}
+			.secStudentLessonInfo .divStudentCont .divDataList .dviTitleCont {
+				position: relative;
+				color: #0f0f0f;
+				padding-top: 0.181159rem;
+				padding-bottom: 0.181159rem;
+				font-size: 0.289855rem;
+			}
+				.secStudentLessonInfo .divStudentCont .divDataList .dviTitleCont .spIconCont {
+					background: #EFF6FE;
+					position: absolute;
+					top: 0.144928rem;
+					left: -0.543478rem;
+					width: 0.452899rem;
+					height: 0.452899rem;
+					-moz-box-shadow: 0.0rem 0.0rem 0.09058rem #EFF6FE;
+					-webkit-box-shadow: 0.0rem 0.0rem 0.09058rem #EFF6FE;
+					box-shadow: 0.0rem 0.0rem 0.09058rem #EFF6FE;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-ms-border-radius: 50%;
+					-o-border-radius: 50%;
+					border-radius: 50%;
+				}
+					.secStudentLessonInfo .divStudentCont .divDataList .dviTitleCont .spIconCont .spIcon {
+						border: 0.036232rem solid #3B9BFC;
+						width: 0.235507rem;
+						height: 0.235507rem;
+						display: inline-block;
+						margin: 0.0rem auto;
+						background: #fff;
+						-webkit-border-radius: 0.09058rem;
+						-moz-border-radius: 0.09058rem;
+						-ms-border-radius: 0.09058rem;
+						-o-border-radius: 0.09058rem;
+						border-radius: 0.09058rem;
+						-ms-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+			.secStudentLessonInfo .divStudentCont .divDataList .divInfoCont {
+				color: #8c9498;
+				padding-bottom: 0.181159rem;
+				font-size: 0.253623rem;
+			}
+			.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont {
+				position: absolute;
+				top: 0.0rem;
+				right: 0.0rem;
+				padding-right: 0.271739rem;
+				padding-top: 0.271739rem;
+			}
+				.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont span {
+					display: block;
+					width: 0.905797rem;
+					color: #005597;
+				}
+				.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont .spDay {
+					font-size: 0.57971rem;
+					font-weight: bold;
+					text-align: center;
+				}
+				.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont .spMonth {
+					text-align: center;
+					font-size: 0.289855rem;
+				}
+			.secStudentLessonInfo .divStudentCont .divDataList:last-child {
+				border-bottom: none;
+			}
+
+			.secStudentLessonInfo .divStudentCont .divDataList .divalinkCont {
+				top: 0.271739rem;
+				right: 0.09058rem;
+			}
+			.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont a {
+				display: block;
+				color: #fff;
+				display: block;
+				height: 0.543478rem;
+				width: 1.449275rem;
+				text-align: center;
+				line-height: 0.543478rem;
+				-webkit-border-radius: 0.543478rem;
+				-moz-border-radius: 0.543478rem;
+				-ms-border-radius: 0.543478rem;
+				-o-border-radius: 0.543478rem;
+				border-radius: 0.543478rem;
+			}
+			.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont .abtnLeave {
+				background: #009CBD;
+				margin-bottom: 0.271739rem;
+			}
+			.secStudentLessonInfo .divStudentCont .divDataList .divRightTimeCont .abtnAdjust {
+				background: #F8A347;
+			}
+			.secStudentLessonInfo .divStudentCont .divDataList .divBtnCont {
+				padding-right: 0.224638rem;
+			}
+				.secStudentLessonInfo .divStudentCont .divDataList .divBtnCont a {
+					float: right;
+					width: 30.4%;
+					height: 0.543478rem;
+					border: 0.018116rem solid #C0C0C0;
+					text-align: center;
+					line-height: 0.543478rem;
+					font-size: 0.253623rem;
+					margin-left: 0.271739rem;
+				}
+					.secStudentLessonInfo .divStudentCont .divDataList .divBtnCont a:last-child {
+						margin-left: 0.0rem;
+					}
+				.secStudentLessonInfo .divStudentCont .divDataList .divBtnCont .abtnDefault {
+					color: #040404;
+				}
+				.secStudentLessonInfo .divStudentCont .divDataList .divBtnCont .abtnAdjust {
+					background: #009CBD;
+					color: #fff;
+					border-color: #009CBD;
+				}
+
+
+
+.divSelControlCont{}
+.divSelControlCont .divSearchControl{
+	border: 0.036232rem solid #D7D6DC;
+	background: #F6F6F6;
+	color: #505050;
+	height: 0.905797rem;		
+	line-height: 0.905797rem;
+	font-size: 0.253623rem;
+	border-radius: 0.072464rem;
+	position: relative;
+}
+.divSelControlCont .divSearchControl .spIcon{
+	position:absolute;
+	top: 0.0rem;
+	bottom: 0.0rem;
+	right: 0.271739rem;
+}
+.divSelControlCont .divSearchControl .selControl{
+	position: absolute;
+	top: 0.0rem; 
+	bottom: 0.0rem;
+	left: 0.0rem;
+	right: 0.0rem;
+	padding-left: 0.271739rem;
+}
+.divSelControlCont .divTipCont{
+	padding-top: 0.543478rem;
+}
+.divSelControlCont .divTipCont .divTitleCont{
+	color: #616161;
+	font-size: 0.289855rem;
+}
+.divSelControlCont .divTipCont .divTitleCont .iconRed{
+	color: #F56C6C;
+}
+.divSelControlCont .divTipCont .divTipFont{
+	color: #979797;
+	font-size: 0.253623rem;
+	padding-left:0.452899rem;
+	padding-top: 0.036232rem;
+	padding-bottom: 0.036232rem;
+}
+
+
+
+
+
+.divNoticeCont {
+	padding-left: 0.271739rem;
+	padding-right: 0.271739rem;
+	padding-top: 0.271739rem;
+}
+.divNoticeCont .abntNotice{color:#ffffff; margin-left:0.09058rem;}
+
+
+
+
+.divTimeTitleBox {
+	background: #f4f4f4;
+	margin-top: -0.1rem;
+	margin-left: -0.1rem;
+	margin-right: -0.1rem;
+	padding: 0.15rem 0rem;
+}
+
+	.divTimeTitleBox .divTitleBox {
+		font-size: 0.28rem;
+		color: #444;
+	}
+
+	.divTimeTitleBox .divTime {
+		font-size: 0.28rem;
+		color: #000;
+		margin-top: 0.15rem;
+	}
+
+.divTimeFloat {
+	position: fixed;
+	top: -3px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	background-color: transparent;
+}
+
+	.divTimeFloat .divTitleBox {
+		display: none;
+	}
+
+	.divTimeFloat .divTime {
+		background: #e4e4e4;
+		margin: 0px auto;
+		height: 40px;
+		line-height: 40px;
+		width: 100px;
+		-webkit-border-radius: 0px 0px 3px 3px;
+		-moz-border-radius: 0px 0px 3px 3px;
+		-ms-border-radius: 0px 0px 3px 3px;
+		-o-border-radius: 0px 0px 3px 3px;
+		border-radius: 0px 0px 3px 3px;
+	}
+
+
+.divTimeTitleBox {
+	background: #f4f4f4;
+	margin-top: -0.1rem;
+	margin-left: -0.1rem;
+	margin-right: -0.1rem;
+	padding: 0.15rem 0rem;
+}
+
+	.divTimeTitleBox .divTitleBox {
+		font-size: 0.28rem;
+		color: #444;
+	}
+
+	.divTimeTitleBox .divTime {
+		font-size: 0.28rem;
+		color: #000;
+		margin-top: 0.15rem;
+	}
+
+.divTimeFloat {
+	position: fixed;
+	top: -0.054348rem;
+	left: 0.0rem;
+	right: 0.0rem;
+	z-index: 10;
+	background-color: transparent;
+}
+
+	.divTimeFloat .divTitleBox {
+		display: none;
+	}
+
+	.divTimeFloat .divTime {
+		background: #e4e4e4;
+		margin: 0.0rem auto;
+		height: 0.8rem;
+		line-height: 0.8rem;
+		width: 2rem;
+		-webkit-border-radius: 0rem 0rem 0.06rem 0.06rem;
+		-moz-border-radius: 0rem 0rem 0.06rem 0.06rem;
+		-ms-border-radius: 0rem 0rem 0.06rem 0.06rem;
+		-o-border-radius: 0rem 0rem 0.06rem 0.06rem;
+		border-radius: 0rem 0rem 0.06rem 0.06rem;
+	}
+
+/*入学测试*/
+.divQuestionList {
+	margin-bottom: 0.4rem;
+	padding: 0.3rem;
+}
+
+	.divQuestionList .divQuestTitle {
+		font-size: 0.32rem;
+		font-weight: bold;
+		color: #000;
+		text-align: left;
+	}
+
+		.divQuestionList .divQuestTitle small {
+			font-weight: normal;
+			font-size: 0.28rem;
+		}
+
+	.divQuestionList .divSelectBox {
+		padding: 0.3rem;
+	}
+
+		.divQuestionList .divSelectBox .lblCheckbox,
+		.divQuestionList .divSelectBox .lblRadio {
+			display: block;
+			background: #fafafa;
+			font-size: 0.28rem;
+			padding: 0.2rem 0.3rem;
+			margin-bottom: 0.2rem;
+			color: #767676;
+			position: relative;
+			text-align: left;
+		}
+
+			.divQuestionList .divSelectBox .lblCheckbox:last-child,
+			.divQuestionList .divSelectBox .lblRadio:last-child {
+				margin-bottom: 0rem;
+			}
+
+			.divQuestionList .divSelectBox .lblCheckbox .spCheck,
+			.divQuestionList .divSelectBox .lblRadio .spCheck {
+				position: absolute;
+				right: 0.24rem;
+				bottom: 0.14rem;
+				font-size: 0.4rem;
+				display: none;
+			}
+
+		.divQuestionList .divSelectBox .lblCheck {
+			background: #ecfcff;
+			color: #000;
+		}
+
+			.divQuestionList .divSelectBox .lblCheck .spCheck {
+				display: block;
+				color: #0B49A3;
+			}
+
+	.divQuestionList .formQuestInput {
+		font-size: 0.24rem;
+		width: 90%;
+		margin: 0.2rem auto;
+	}
+
+.footerSubmitBox .divBtnFooterThree {
+	position: fixed;
+	padding: 0.25rem;
+	bottom: 0.0rem;
+	left: 0.0rem;
+	right: 0.0rem;
+	background: #fff;
+}
+
+	.footerSubmitBox .divBtnFooterThree .abtnNext {
+		background: #009CBD;
+		border: 0.02rem solid #009CBD;
+		display: block;
+		color: #fff;
+		height: 0.7rem;
+		line-height: 0.7rem;
+		text-align: center;
+		font-size: 0.24rem;
+		-webkit-border-radius: 0.1rem;
+		-moz-border-radius: 0.1rem;
+		-ms-border-radius: 0.1rem;
+		-o-border-radius: 0.1rem;
+		border-radius: 0.1rem;
+	}

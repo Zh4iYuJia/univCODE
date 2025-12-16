@@ -1,0 +1,260 @@
+﻿
+//加载
+//isDisabledBtnSave 防止二次提交，禁用按钮
+function Loading(message, isDisabledBtnSave) {
+    if (message == null || typeof (message) == "undefined" || message == "") {
+        message = "正在努力加载数据中...";
+    }
+    if (isDisabledBtnSave == true) {
+        $("#btnSave").prop("disabled", true);
+    }
+    layerMsg = layer.open({
+        type: 2,
+        content: message,
+        shadeClose: false,
+        time: false //取消自动关闭
+    });
+}
+
+//关闭加载层
+//isDisabledBtnSave 防止二次提交，禁用的按钮启用
+function CloseLoading(isDisabledBtnSave) {
+    if (isDisabledBtnSave == false) {
+        $("#btnSave").prop("disabled", false);
+    }
+    if (layerMsg != null) {
+        layer.close(layerMsg);
+    }
+}
+
+//提示
+//isDisabledBtnSave 防止二次提交，禁用按钮
+function Alert(message, isDisabledBtnSave) {
+    if (isDisabledBtnSave == true) {
+        $("#btnSave").prop("disabled", true);
+    }
+    if (message.indexOf("您不在任何一个进行的迎新批次中") < 0 && message.indexOf("您不在任何一个运行的迎新批次中") < 0) {
+        layer.open({
+            content: message,
+            skin: 'msg',
+            time: 3 //2秒后自动关闭
+        });
+    }
+}
+
+//延时跳转页面
+function DelayPage(url) {
+    setTimeout(function () {
+        window.location.href = url;
+    }, 2000);
+}
+
+////////////////////////////////////////////////基础方法///////////////////////////////////////////////////////////////////
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+
+function GetQueryString(name) {
+    name = name.toLowerCase();
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.toLowerCase().substr(1).match(reg);
+    if (r != null)
+        return decodeURI(r[2]);
+    return null;
+}
+
+
+var setFiveFloat = function (val) {
+
+    val = val.toString();
+    val = val.replace(/[^\d.]/g, "");
+    val = val.replace(/\.{2,}/g, ".");
+    val = val.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
+    val = val.replace(/^(\-)*(\d+)\.(\d\d\d\d\d).*$/, '$1$2.$3'); //最多输入5个小数
+    if (val.indexOf(".") < 0 && val != "") {//以上已经过滤，此处控制的是如果没有小数点，首位不能为类似于 01、02的金额
+        val = parseFloat(val);
+    }
+
+    return val.toString();
+}
+
+//设置五位小数，自动补齐
+var setFiveDecimal = function (val) {
+    if (val == null || isNaN(val) || val == '') {
+        return '';
+    }
+    return parseFloat(val).toFixed(2);
+};
+
+
+/*判断中文字符的长度*/
+function getByteLen(divID) {
+    var strValue = $(divID).html();
+    var len = 0;
+    for (var i = 0; i < strValue.length; i++) {
+        var a = strValue.charAt(i);
+        if (a.match(/[^\x00-\xff]/ig) != null) {
+            len += 2;
+        } else {
+            len += 1;
+        }
+    }
+    //alert(len);
+    if (len > 30) {
+        $(divID).parent('.divSelectBox').addClass('divSelectBoxLong');
+    } else {
+        $(divID).parent('.divSelectBoxLong').removeClass('divSelectBoxLong');
+    }
+}
+
+function toNull(str) {
+    if (str == null || typeof (str) == "undefined") {
+        str = "";
+    }
+    return str;
+}
+
+function onBack() {
+    window.history.back(-1);
+}
+
+//延时返回
+function DelayBack() {
+    setTimeout(function () {
+        window.history.back(-1);
+    }, 2000);
+}
+
+//延时刷新
+function DelayReload() {
+    setTimeout(function () {
+        window.location.reload();
+    }, 2000);
+}
+
+function StudentOut(ScheduleId, ScheduleName, Teacher, Room, Time, Repeat) {
+    //询问框
+    layer.open({
+        content: '你选择的研究性系列讲座：“' + ScheduleName + '”；教师：' + Teacher + '；地点：' + Room + '；上课时间：' + Time + '，你确定要退课吗？'
+        , btn: ['确定', '取消']
+        , shadeClose: false
+        , yes: function (index) {
+
+            if (Repeat > 0) {
+                //询问框
+                layer.open({
+                    //content: '你选择的研究性系列讲座是' + Repeat + '节课捆绑选课的，如果你退课的话捆绑的研究性系列讲座将全部退课，你确定退课吗？'
+                    content: '你选择的研究性系列讲座是由' + Repeat + '个专题构成的系列讲座，需捆绑选课，如果操作退课将取消该系列讲座的全部讲座，你确定退课吗？'
+                    , btn: ['确定', '取消']
+                    , yes: function (index) {
+                        var param = {
+                            ScheduleId: ScheduleId,
+                        };
+                        Loading("正在保存数据中...", true);
+                        var requestLogin = $.post("/study/home/SaveOutInfo", param, null, "json");
+                        var whenRequest = $.when(requestLogin);
+                        whenRequest.done(function (returnLogin) {
+                            CloseLoading(false);
+                            var data = returnLogin;
+                            if (data.result == true) {
+                                layer.close(index);
+                                Alert(data.message);
+                                DelayReload();
+                            }
+                            else {
+                                Alert(data.message);
+                            }
+                        });
+                    }
+                });
+            }
+            else {
+                var param = {
+                    ScheduleId: ScheduleId,
+                };
+                Loading("正在保存数据中...", true);
+                var requestLogin = $.post("/study/home/SaveOutInfo", param, null, "json");
+                var whenRequest = $.when(requestLogin);
+                whenRequest.done(function (returnLogin) {
+                    CloseLoading(false);
+                    var data = returnLogin;
+                    if (data.result == true) {
+                        layer.close(index);
+                        Alert(data.message);
+                        DelayReload();
+                    }
+                    else {
+                        Alert(data.message);
+                    }
+                });
+            }
+        }
+    });
+}
+
+function SetSign(ScheduleId, ScheduleName, Room, Time) {
+    //询问框
+    layer.open({
+        content: '课时：“' + ScheduleName + '”；地点：' + Room + '；上课时间：' + Time + '您确定要考勤吗？'
+        , btn: ['确定', '取消']
+        , shadeClose: false
+        , yes: function (index) {
+            var param = {
+                ScheduleId: ScheduleId,
+            };
+            Loading("正在保存数据中...", true);
+            var requestLogin = $.post("/teach/lesson/setSign", param, null, "json");
+            var whenRequest = $.when(requestLogin);
+            whenRequest.done(function (returnLogin) {
+                CloseLoading(false);
+                var data = returnLogin;
+                if (data.result == true) {
+                    layer.close(index);
+                    Alert(data.message);
+                    DelayReload();
+                }
+                else {
+                    Alert(data.message);
+                }
+            });
+
+        }
+    });
+}
+
+function CancelSign(ScheduleId, ScheduleName, Room, Time,Url) {
+    //询问框
+    layer.open({
+        content: '课时：“' + ScheduleName + '”；地点：' + Room + '；上课时间：' + Time + '，您确定要取消考勤吗？取消考勤后所有学生的考勤将设置为到课并且不允许再设置成考勤。' 
+        , btn: ['确定', '取消']
+        , shadeClose: false
+        , yes: function (index) {
+            var param = {
+                ScheduleId: ScheduleId,
+            };
+            Loading("正在保存数据中...", true);
+            var requestLogin = $.post("/teach/lesson/cancelSign", param, null, "json");
+            var whenRequest = $.when(requestLogin);
+            whenRequest.done(function (returnLogin) {
+                CloseLoading(false);
+                var data = returnLogin;
+                if (data.result == true) {
+                    layer.close(index);
+                    Alert(data.message);
+                    if (Url == null || typeof (Url) == "undefined" || Url == "") {
+                        DelayReload();
+                    }
+                    else {
+                        DelayPage(Url);
+                    }
+                }
+                else {
+                    Alert(data.message);
+                }
+            });
+
+        }
+    });
+}
